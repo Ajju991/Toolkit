@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 200px;
+  background: #1f1f1f;
+  padding: 1em;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+}
+.sidebar h2 {
+  margin-top: 0;
+}
+.sidebar button, .sidebar a {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.sidebar button:hover, .sidebar a:hover {
+  background: #388e3c;
+}
+.main {
+  flex: 1;
+  padding: 1em;
+  text-align: center;
+}
+canvas {
+  max-width: 90%;
+  margin-top: 20px;
+  border: 1px solid #444;
+}
