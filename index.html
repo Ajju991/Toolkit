@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media ToolKit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Media ToolKit</h1>
+    <p>Smart tools for images, PDFs, and file conversions</p>
+  </header>
+  <main>
+    <section class="tool">
+      <h2>1. Image Compressor</h2>
+      <button onclick="showScreen('compressorScreen')">Start</button>
+    </section>
+
+    <section class="tool">
+      <h2>2. Background Remover</h2>
+      <button onclick="showScreen('bgRemoverScreen')">Start</button>
+    </section>
+
+    <section class="tool">
+      <h2>3. PDF Editor</h2>
+      <button onclick="showScreen('pdfEditorScreen')">Start</button>
+    </section>
+
+    <!-- Hidden screens -->
+    <div id="compressorScreen" class="popup">
+      <h3>Compress Image</h3>
+      <input type="file" accept="image/*" id="imgInput" />
+      <button onclick="compressImage()">Compress</button>
+      <p id="compressResult"></p>
+      <a id="downloadCompressed" href="#" download="compressed.jpg" style="display:none;">Download Compressed Image</a>
+      <button onclick="goBack()">Back</button>
+    </div>
+
+    <div id="bgRemoverScreen" class="popup">
+      <h3>Remove Background</h3>
+      <input type="file" accept="image/*" id="bgInput" />
+      <button onclick="removeBackground()">Remove</button>
+      <p id="bgResult"></p>
+      <a id="downloadBG" href="#" download="no-bg.png" style="display:none;">Download Image</a>
+      <button onclick="goBack()">Back</button>
+    </div>
+
+    <div id="pdfEditorScreen" class="popup">
+      <h3>Edit PDF</h3>
+      <input type="file" accept="application/pdf" id="pdfInput" />
+      <button onclick="editPDF()">Edit</button>
+      <p id="pdfResult"></p>
+      <a id="downloadPDF" href="#" download="edited.pdf" style="display:none;">Download PDF</a>
+      <button onclick="goBack()">Back</button>
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 Media Toolkit</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
