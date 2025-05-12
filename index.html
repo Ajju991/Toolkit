@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Image Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="editor-container">
+    <aside class="sidebar">
+      <h2>Tools</h2>
+      <button onclick="selectTool('sponge')">Sponge Tool</button>
+      <button onclick="selectTool('background')">Background Remover</button>
+      <button onclick="selectTool('brush')">Brush Tool</button>
+      <button onclick="selectTool('brightness')">Brightness</button>
+      <button onclick="selectTool('contrast')">Contrast</button>
+      <button onclick="selectTool('text')">Add Text</button>
+      <button onclick="resetImage()">Reset</button>
+      <a id="download" download="edited.png">Download</a>
+    </aside>
+    <main class="main-area">
+      <h1>Ultimate Image Editor</h1>
+      <input type="file" id="upload" accept="image/*" />
+      <canvas id="canvas"></canvas>
+      <div class="tool-settings" id="toolSettings">
+        <!-- Dynamic Tool Settings Will Load Here -->
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
