@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Toolkit Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AI Toolkit Website</h1>
+    <p>All-in-one tools to save your time and boost productivity</p>
+  </header>
+  <main>
+    <section class="tool">
+      <h2>1. Code Generator</h2>
+      <textarea id="promptInput" placeholder="Enter your prompt here..."></textarea>
+      <button onclick="generateCode()">Generate Code</button>
+      <pre id="codeOutput">Your code will appear here...</pre>
+    </section>
+
+    <section class="tool">
+      <h2>2. Grammar Checker</h2>
+      <textarea id="grammarInput" placeholder="Paste your sentence..."></textarea>
+      <button onclick="checkGrammar()">Check Grammar</button>
+      <pre id="grammarOutput">Corrected text will appear here...</pre>
+    </section>
+
+    <section class="tool">
+      <h2>3. Text Summarizer</h2>
+      <textarea id="summaryInput" placeholder="Paste your text..."></textarea>
+      <button onclick="summarizeText()">Summarize</button>
+      <pre id="summaryOutput">Summary will appear here...</pre>
+    </section>
+
+    <section class="tool">
+      <h2>4. Hashtag Generator</h2>
+      <input id="hashtagInput" type="text" placeholder="Topic (e.g. freelancing)" />
+      <button onclick="generateHashtags()">Generate Hashtags</button>
+      <pre id="hashtagOutput">#hashtags will appear here...</pre>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 AI Toolkit</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
